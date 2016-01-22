@@ -21,6 +21,9 @@ $(document).ready(function() {
   $("form#userNumber").submit(function(event) {
 
     var number = parseInt($("input#number").val());
+    if (number <= 0){
+      alert("Please enter a number greater than or equal to 1!");
+    }
     var returnedNumberArray = pingPong(number);
 
     $("ul").empty();
