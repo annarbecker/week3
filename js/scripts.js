@@ -17,6 +17,16 @@ var pingPong = function (number) {
   return numberArray;
 };
 
-// $(document).ready(function() {
-//
-// });
+$(document).ready(function() {
+  $("form#userNumber").submit(function(event) {
+
+    var number = parseInt($("input#number").val());
+    var returnedNumberArray = pingPong(number);
+    var numberList = document.getElementById("ping-pong");
+
+    $("#ping-pong").text(returnedNumberArray);
+    $("#result").show();
+
+    event.preventDefault();
+  });
+});
