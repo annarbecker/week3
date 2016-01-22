@@ -31,4 +31,8 @@ describe("pingPong", function() {
   it("will return ping for numbers divisible by 3 in the array", function() {
     expect(pingPong(3)).to.eql([1,2,"ping"]);
   });
+
+  it("will return pong for numbers divisible by 5 in the array", function() {
+    expect(pingPong(5)).to.eql([1,2,"ping",4,"pong"])
+  });
 });
