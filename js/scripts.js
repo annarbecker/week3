@@ -23,6 +23,7 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var returnedNumberArray = pingPong(number);
 
+// empty ul so that when a new number is entered into the field the prexisting returnedNumberArray list is cleared
     $("ul").empty();
 
 // loop through returnedNumberArray and add to list
