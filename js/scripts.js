@@ -23,10 +23,8 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var returnedNumberArray = pingPong(number);
 
-// empty ul so that when a new number is entered into the field the prexisting returnedNumberArray list is cleared
     $("ul").empty();
 
-// loop through returnedNumberArray and add to list
     for (var i = 0; i < returnedNumberArray.length; i++) {
       var listItem = document.createElement("li");
       listItem.innerHTML = returnedNumberArray[i];
@@ -34,11 +32,6 @@ $(document).ready(function() {
       numberList.appendChild(listItem);
     }
 
-// in DOM user appendChild to add child element instead of append
-
-
-
-    // $("#ping-pong").text(returnedNumberArray);
     $("#result").show();
 
     event.preventDefault();
