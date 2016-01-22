@@ -24,7 +24,11 @@
 
 
 describe("pingPong", function() {
-  it("will count up to a user's numb er by 1 and put the numbers into an array", function () {
+  it("will count up to a user's number by 1 and put the numbers into an array", function () {
     expect(pingPong(2)).to.eql([1,2]);
+  });
+
+  it("will return ping for numbers divisible by 3 in the array", function() {
+    expect(pingPong(3)).to.eql([1,2,"ping"]);
   });
 });

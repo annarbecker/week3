@@ -24,7 +24,12 @@
 var pingPong = function (number) {
   var numberArray = [];
   for (var i = 1; i <= number; i++) {
-    numberArray.push(i);
+    if (i % 3 === 0) {
+      numberArray.push("ping")
+    }
+    else {
+      numberArray.push(i);
+    }
   }
   return numberArray;
 };
