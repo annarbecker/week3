@@ -3,3 +3,9 @@ describe("countUp", function(){
     expect(countUp(2)).to.eql([1,2]);
   });
 });
+
+describe("pingPong", function() {
+  it("will return ping for numbers divisible by 3", function() {
+    expect(pingPong(3)).to.equal("ping");
+  });
+});
