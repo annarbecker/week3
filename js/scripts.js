@@ -16,4 +16,7 @@ var pingPong = function(number) {
   else if (number % 3 === 0) {
     return "ping";
   }
+  else if (number % 3 !== 0 || number % 5 !== 0 || number % 15 !== 0 ) {
+    return number;
+  }
 };

@@ -16,4 +16,8 @@ describe("pingPong", function() {
   it("will return pingpong for numbers divisible by 3 and 5", function() {
     expect(pingPong(15)).to.equal("pingpong");
   });
+
+  it("will return the number for a number that is not divisible by 3, 5, or 15", function(){
+    expect(pingPong(1)).to.equal(1);
+  });
 });
