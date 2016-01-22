@@ -12,4 +12,8 @@ describe("pingPong", function() {
   it("will return pong for numbers divisible by 5", function() {
     expect(pingPong(5)).to.equal("pong");
   });
+
+  it("will return pingpong for numbers divisible by 3 and 5", function() {
+    expect(pingPong(15)).to.equal("pingpong");
+  });
 });
