@@ -1,0 +1,11 @@
+#result {
+  display: none;
+}
+
+.container {
+  width: 95%;
+}
+
+.jumbotron {
+  text-align: center;
+}
